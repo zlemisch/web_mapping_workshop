@@ -14,7 +14,7 @@ map.setView([39, -96], 4);
 
 var dataFileToAdd = 'data/dc_national_parks.geojason';
 
-var featurelayer = L.mapbox.featureLayer().loadURL(dataFileToAdd).addTo(map);
+var featureLayer = L.mapbox.featureLayer().loadURL(dataFileToAdd).addTo(map);
 
 featureLayer.on('ready',function(){
   this.setStyle({
