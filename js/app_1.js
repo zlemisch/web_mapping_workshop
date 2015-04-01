@@ -27,6 +27,6 @@ featureLayer.on('ready',function(){
 
 featureLayer.on('ready',function(){
   this.eachLayer(function(layer){
-    layer.bindPopup('hi potato head ' + layer.feature.properties.NAME);
+    layer.bindPopup('hi potato head ' + layer.feature.properties.name);
   });
 });
