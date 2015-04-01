@@ -11,7 +11,7 @@ var map = L.mapbox.map('map', mapId);
 //Set the view of the map to the whole US
 map.setView([39, -96], 4);
 
-var dataFileToAdd = 'data/dc_national_parks.geojason';
+var dataFileToAdd = 'data/dc_national_parks.geojson';
 
 var featureLayer = L.mapbox.featureLayer().loadURL(dataFileToAdd).addTo(map);
 
@@ -27,6 +27,6 @@ featureLayer.on('ready',function(){
 
 featureLayer.on('ready',function(){
   this.eachLayer(function(layer){
-    layer.bindPopup('hi potato head' + layer.feature.properties.NAME);
+    layer.bindPopup('hi potato head ' + layer.feature.properties.NAME);
   });
 });
